@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pollan's ChatApp</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- -->
+    <h1 class="text-center" >Smpl Chat</h1>
+    <div class="container">
+      <div id="messages">
+      </div>
+    <form action="">
+      <input id="m" autocomplete="off" /><button class="btn btn-primary m-2">Send</button>
+    </form>
+    </div>
+    <script src="/jquery"></script>
+    <!--Get the User -->
+    <script>
+      const user = prompt("Please enter your name:");
+      window.user = user;;
+    </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      $( () => {
+        var socket = io();
+        $('form').submit( (e) => {
+          e.preventDefault();
+          socket.emit('chat message', window.user + ":     " + $('#m').val() );
+          $('#m').val(''); //reset message to empty string
+          return false;
+        });
+        socket.on('chat message', (msg) => {
+          msg.startsWith(window.user) ?
+          $('#messages').append($('<div>').addClass('alert-primary').text(msg)) :
+          $('#messages').append($('<div>').addClass('alert-success').text(msg));
+        });
+      });
+    </script>
+  </body>
+</html>

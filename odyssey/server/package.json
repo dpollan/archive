@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Database server for Coding Odyssey application.  This database tracks records for all users, the coding sessions they complete, metrics regarding how the session was handled, how they felt about the session, how strong they feel about the subject, what went well, where they can improve and a list of notes they can create about the given subject.  To run this locally, ensure that you specify the db_server_port properly inside your config file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dpollan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13"
+  }
+}

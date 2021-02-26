@@ -1,0 +1,24 @@
+.p-base {
+  background-color: #542b72;
+  color: #d4d26a;
+}
+
+.p-light {
+  background-color: #9576ab;
+  color: #aaa739;
+}
+
+.p-lighten {
+  background-color: #734c8f;
+  color: #aaa739;
+}
+
+.p-darken {
+  background-color: #3a1356;
+  color: #aaa739;
+}
+
+.p-dark {
+  background-color: #230439;
+  color: #d4d26a;
+}

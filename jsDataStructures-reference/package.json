@@ -1,0 +1,30 @@
+{
+  "name": "jsdatastructures-reference",
+  "version": "1.0.0",
+  "description": "Implementation of common programming data structures in JavaScript with tests",
+  "main": "simpleServer.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "test-console": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpollan/jsDataStructures-reference.git"
+  },
+  "author": "dpollan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpollan/jsDataStructures-reference/issues"
+  },
+  "homepage": "https://github.com/dpollan/jsDataStructures-reference#readme"
+}
